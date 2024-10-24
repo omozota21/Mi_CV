@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #c0c0c0;
+  }
+header, footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+   
+}
+nav a:hover {
+    margin: 0 15px;
+    color: #4CAF50; 
+    text-decoration: none;
+
+}
+section {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+.volver-arriba {
+    margin-top: 20px;
+    text-align: center;
+}
+
+img{
+    width: 160px;
+}
+
+/*carrusel*/
+.carrusel {
+    position: relative;
+    width: 300px; 
+    overflow: hidden;
+    margin: auto;
+}
+
+.imagenes {
+    display: flex;
+    animation: slide 12s infinite; 
+}
+
+.imagen {
+
+    height: 140px;
+    min-width: 100%;
+    transition: opacity 1s ease;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
